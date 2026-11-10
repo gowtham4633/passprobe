@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PASS PROBE — Password Strength Analyzer</title>
+  <meta name="description" content="Secure, client-side password strength analyzer with rule-based checks, pattern detection, character analysis, and estimated entropy calculation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="src/styles/global.css">
+  <link rel="stylesheet" href="src/styles/home.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Engine Scripts -->
+  <script src="src/utils/constants.js"></script>
+  <script src="src/engine/rules.js"></script>
+  <script src="src/engine/patternDetector.js"></script>
+  <script src="src/engine/entropy.js"></script>
+  <script src="src/engine/scoring.js"></script>
+  <script src="src/engine/analyzePassword.js"></script>
+
+  <!-- React Components (JSX loaded via Babel) -->
+  <script type="text/babel" src="src/components/Header.jsx"></script>
+  <script type="text/babel" src="src/components/PasswordInput.jsx"></script>
+  <script type="text/babel" src="src/components/StrengthMeter.jsx"></script>
+  <script type="text/babel" src="src/components/ScoreCard.jsx"></script>
+  <script type="text/babel" src="src/components/EntropyCard.jsx"></script>
+  <script type="text/babel" src="src/components/CharacterAnalysis.jsx"></script>
+  <script type="text/babel" src="src/components/PatternWarnings.jsx"></script>
+  <script type="text/babel" src="src/components/RecommendationList.jsx"></script>
+
+  <script type="text/babel" src="src/pages/Home.jsx"></script>
+  <script type="text/babel" src="src/App.jsx"></script>
+  <script type="text/babel" src="src/main.jsx"></script>
+</body>
+</html>
